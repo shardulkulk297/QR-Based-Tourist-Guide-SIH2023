@@ -1,0 +1,583 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* styles/NavigationBar.css */
+
+.centered-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+h5 {
+	align-content: center;
+	text-align: center;
+}
+
+.AudioEd {
+	font-family: "Poppins", sans-serif;
+	margin-top: 60px;
+	border: 2px solid #333;
+	/* Adjust border color and thickness as needed */
+	padding: 10px;
+	border-radius: 10px;
+	/* Center the audio controls */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h4 {
+	margin-top: 50px;
+}
+
+/* styles/NavigationBar.css */
+/* Center the "Listen In Audio" text */
+
+/* Add borders to the audio container */
+
+
+/* Increase image size and add a border */
+.centered-image {
+	display: block;
+	margin: 0 auto;
+	margin-top: 90px;
+	border: 2px solid #333;
+	/* Adjust border color and thickness as needed */
+	border-radius: 20px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Add some margin below the image */
+.centered-image+* {
+	margin-top: 20px;
+}
+
+/* Update your existing CSS file or add the following styles */
+
+/* Default styles for larger screens */
+.navbar {
+	display: flex;
+	background-color: #333;
+	
+	padding: 10px;
+	position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust as needed */
+
+	
+}
+
+.nav-link {
+	margin: 0 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.menu-icon {
+	display: none;
+	/* Hide the menu icon by default */
+}
+
+/* Styles for smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	.menu-icon {
+		display: block;
+		/* Show the menu icon */
+		font-size: 1.5em;
+		cursor: pointer;
+	}
+
+	.nav-link {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.login-link {
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.menu-icon {
+		display: block;
+		/* Show the icon for smaller screens */
+		font-size: 1.5rem;
+	}
+
+	.nav-link {
+		display: none;
+		/* Hide links by default on smaller screens */
+	}
+
+	.nav-link.show {
+		display: block;
+		/* Show links when the menu is active */
+	}
+}
+
+:root {
+	--accent-color: #1478b4;
+	--accent-low-color: #d7e1e2;
+	--info-color: #fcb733;
+	--danger-color: #fc4a1a;
+	--first-black: #17252a;
+	--second-black: #acaab4;
+	--first-white: #ffffff;
+	--second-white: #dddddf;
+	--third-white: #f2f2f2;
+}
+
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+	/* Replace with your image URL */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	/* Adjust the blur intensity as needed */
+}
+
+.blur-background {
+
+	/* Replace with your image URL */
+	background-size: cover;
+	background-position: center;
+	filter: blur(5px);
+	/* Adjust the blur intensity as needed */
+}
+
+/* Apply the blur effect to a specific container */
+.container-with-blur {
+	position: relative;
+	z-index: 1;
+	/* Ensure the content is on top of the blurred background */
+}
+
+/* Apply the blur effect to a specific container */
+
+/* Rest of your CSS styles remain unchanged */
+
+
+.container {
+	max-width: 500px;
+	margin: 30px auto;
+	overflow: auto;
+	min-height: 300px;
+	border: 1px solid steelblue;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 50px;
+	animation: fadeIn 1s ease-in-out;
+	background: linear-gradient(90deg, #c2f1ff 0%, #f1b3b3 100%);
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control label {
+	display: block;
+}
+
+.form-control input {
+	width: 100%;
+	height: 40px;
+	margin: 5px;
+	padding: 3px 7px;
+	font-size: 17px;
+	border: 1px solid #ccc;
+}
+
+.form-control-check {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-control-check label {
+	flex: 1;
+}
+
+
+.centered-image {
+	display: block;
+	margin: 0 auto;
+	margin-top: 90px;
+	border-radius: 20px;
+	max-width: 100%;
+	/* Add this line to make images responsive */
+	height: auto;
+	/* Add this line to maintain aspect ratio */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	/* Add shadow effect */
+}
+
+.audioShow {
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid steelblue;
+	/* Add border to audio section */
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	/* Add shadow effect */
+}
+
+.language-container {
+	text-align: center;
+	margin-top: 50px;
+	/* Adjust as needed */
+}
+
+.language-select {
+	margin-top: 10px;
+}
+
+.TextShow {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border: 2px solid steelblue;
+	/* Horizontal border */
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	/* Add shadow effect */
+	padding: 15px;
+	position: relative;
+	/* Add relative positioning */
+}
+
+/* Add a thin vertical border to the right */
+.TextShow::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 2px;
+	/* Adjust the thickness of the vertical border */
+	background-color: steelblue;
+	/* Adjust the color of the vertical border */
+}
+
+.AudioEd {
+	font-family: "Poppins", sans-serif;
+	margin-top: 60px;
+	border: 2px solid #333;
+	/* Adjust border color and thickness as needed */
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/* Increase image size and add a border */
+.centered-image {
+	display: block;
+	margin: 0 auto;
+	margin-top: 90px;
+	border: 2px solid #333;
+	/* Adjust border color and thickness as needed */
+	border-radius: 20px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add some margin below the image */
+.centered-image+* {
+	margin-top: 20px;
+}
+
+/* Adjust the font size as needed */
+.TextShow p {
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: justify;
+	padding: 15px;
+}
+
+.TextShow {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	border: 2px solid #000;
+	/* Add border around text */
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	/* Add drop shadow */
+	font-size: 12px;
+	padding: 10%;
+	padding-top: 0%;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* Add a vertical border on the left of TextShow */
+.TextShow::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 2px;
+	background-color: #000;
+	margin-right: 20px;
+	/* Adjust the spacing as needed */
+}
+
+/* Add animation to images */
+.centered-image,
+.audioShow {
+	transition: transform 0.5s ease;
+	/* Add a smooth transition effect */
+}
+
+.centered-image:hover,
+.audioShow:hover {
+	transform: scale(1.1);
+	/* Add scaling animation on hover */
+}
+
+.listenSummary {
+	font-style: italic;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.mapImage {
+	display: block;
+	margin: 5px auto;
+	border: 2px solid #ccc;
+}
+
+.SmallText {
+	padding: 10%;
+}
+
+.exploreSection {
+	text-align: center;
+}
+
+.exploreTitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+}
+
+.arrow {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Footer styling */
+.footer {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f00;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+/*  */
+
+.input-title {
+	font-size: 30px;
+	color: var(--accent-color);
+}
+
+.input-subtitle {
+	font-size: 24px;
+	color: var(--first-black);
+}
+
+.input-container {
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+}
+
+.search-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 2.4rem;
+	width: 500px;
+	border: 1px solid var(--second-black);
+	border-radius: 0.4rem;
+	box-sizing: border-box;
+	margin-right: 1em;
+}
+
+.search-box:focus-within {
+	border: 1.5px solid var(--accent-color);
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 2px 10px;
+	cursor: pointer;
+}
+
+.search-icon {
+	width: 1.5em;
+}
+
+input {
+	flex: 1;
+	height: 2.4rem;
+	padding: 0.2rem 1rem;
+	border: none;
+	outline: none;
+	background-color: transparent;
+
+	font-size: 0.9em;
+	border-radius: 0.4rem;
+	box-sizing: border-box;
+}
+
+
+
+
+/* wave loader animation  */
+.loader-container {
+	margin-top: 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wave-loader-conatiner {
+	width: 7em;
+	margin: 3em 1em 2em 1em;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.circle {
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 0.4em;
+	background-color: var(--accent-color);
+	animation: anim 2s infinite linear;
+	transform: translateY(2px);
+}
+
+.circle-1 {
+	animation-delay: -0.3s;
+}
+
+.circle-2 {
+	animation-delay: calc(-0.3s * 2);
+}
+
+.circle-3 {
+	animation-delay: calc(-0.3s * 3);
+}
+
+.circle-4 {
+	animation-delay: calc(-0.3s * 4);
+}
+
+.circle-5 {
+	animation-delay: calc(-0.3s * 5);
+}
+
+.circle-6 {
+	animation-delay: calc(-0.3s * 6);
+}
+
+@keyframes anim {
+
+	0%,
+	100% {
+		transform: translateY(2px);
+	}
+
+	50% {
+		transform: translateY(-30px);
+	}
+}
+
+.content-container {
+	margin-top: 2em;
+}
+
+.paragraph {
+	margin-top: 1em;
+}
+
+/* Add the following styles to your CSS */
+
+
+
+.generated-text {
+	text-align: justify;
+	/* Justify the text */
+	text-align: center;
+	/* Align the text in the center */
+}

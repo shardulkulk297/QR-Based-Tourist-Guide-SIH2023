@@ -1,0 +1,102 @@
+.inpbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid steelblue;
+    box-shadow: inset;
+    box-sizing: border-box;
+    overflow: none;
+    margin: 30px auto;
+    width: 30%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+li:hover{
+    color: red;
+}
+ul{
+    list-style-type: none;
+    margin: 10px;
+    cursor: pointer;
+    
+
+
+}
+
+.Mapp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+.inlineCss{
+  border-radius: 10px;
+}
+
+
+.dropdown-btn {
+    padding: 10px;
+    border: 1px solid steelblue;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+     /* Completely transparent background */
+    border: none; /* Remove the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    z-index: 1; /* Ensure the dropdown is above other elements */
+    
+  }
+  
+  .dropdown-list li {
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f09c;
+    border-radius: 10px;
+  }
+  
+  .inpbox:hover .dropdown-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    background-color: transparent; /* Completely transparent background */
+  }
+  .inpbox:hover ~ .below-element {
+    margin-top: 100px; /* Adjust this value to match the margin-bottom above */
+  }
+
+  .GenText{
+    padding: 50px;
+    text-align: justify;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .Hotel{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
